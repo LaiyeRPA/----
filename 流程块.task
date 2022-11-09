@@ -1,6 +1,7 @@
 
 Dim hWeb, iRet
-hWeb = WebBrowser.Create("chrome", "http://172.27.55.220/rpa_collaboration/#/task-list", 30000, {"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "sBrowserPath": "", "sStartArgs": ""})
+hWeb = WebBrowser.Create("chrome", "https://test-cloud.laiye.com/identity/view/#/login", 30000, {"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "sBrowserPath": "", "sStartArgs": ""})
+Delay(15000)
 iRet = WebBrowser.WaitPage(hWeb, @ui"链接<a>_FormProcessing", 60000, {"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200})
 Delay(15000)
 Mouse.Action(@ui"文本<span>_Unassigned47", "left", "click", 10000, {"bContinueOnError": false, "iDelayAfter": 300, "iDelayBefore": 200, "bSetForeground": true, "sCursorPosition": "Center", "iCursorOffsetX": 0, "iCursorOffsetY": 0, "sKeyModifiers": [], "sSimulate": "simulate", "bMoveSmoothly": false})
