@@ -39,7 +39,7 @@
             },
             "file": "流程块.task",
             "caption": "流程块",
-            "editorMode": "visual",
+            "editorMode": "sourceCode",
             "breakpoints": {}
         }
     ],
